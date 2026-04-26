@@ -1,0 +1,4 @@
+repository "Cover Shooter 2025-01-25_16-05-16/Platformer Project@1315573@cloud"
+  path "/"
+    br "/main"
+    co "/main"
