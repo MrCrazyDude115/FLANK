@@ -1,46 +1,29 @@
 # FLANK
 
-**Unity · C# · Solo university project · 4 weeks · First Unity/C# game**
+**Unity - C# - Solo university project - 4 weeks**
 
-*FLANK* is an endless 2D arcade shooter about surviving enemies approaching from both sides. Move to turn toward a threat, fire in the direction you're facing, and try to beat your score. One hit ends the run.
+An endless 2D arcade shooter where enemies approach from both sides. Move left or right to face them, shoot, and survive for as long as you can. One hit ends the run.
 
 **[Play FLANK on itch.io](https://apexgenesis.itch.io/flank)**
 
 ## My role
 
-**Solo developer — game design and programming.** I designed the arcade gameplay loop and implemented player movement and shooting, enemy behaviour and spawning, scoring, and game-over/restart flow.
+**Solo developer - game design and programming.** I implemented player movement and shooting, enemy behaviours and spawning, scoring, and the game-over and restart system.
 
 ## Technical highlights
 
-- **Movement-based facing:** The character faces left or right based on horizontal input and keeps that direction when stationary. Projectiles travel toward the direction the player is facing (`PlayerController.cs`, `Bullet.cs`).
-- **Three enemy types:** Fast/low-health, balanced, and slow/high-health enemies create different threats. Enemies move toward the player and have configurable health, speed, and score values (`Enemy.cs`).
-- **Random spawning:** `EnemySpawner.cs` randomly selects an enemy prefab, a spawn side, and the delay before the next spawn.
-- **Arcade game flow:** `LogicManager.cs` tracks score, starts the game, handles death, and enables restarting after a short delay.
+- **Directional shooting:** Moving left or right changes the player's facing direction, which stays the same when standing still. Bullets fire in that direction (`PlayerController.cs`, `Bullet.cs`).
+- **Enemy types:** Three enemy types with different speeds and health values chase the player. Each can have its own score value (`Enemy.cs`).
+- **Random spawning:** `EnemySpawner.cs` randomly picks an enemy type, which side to spawn it on, and the time until the next spawn.
+- **Game flow:** `LogicManager.cs` handles starting the game, scoring, game over, and restarting after a short delay.
 
 ## Controls
 
 | Input | Action |
 | --- | --- |
-| A / D or Left / Right arrows | Move and change facing direction |
-| Space | Start / shoot / restart when prompted |
-
-You **do not** need to be moving to shoot; the last horizontal movement determines which way you face.
+| A / D or Left / Right arrows | Move and change direction |
+| Space | Start game / Shoot / Restart |
 
 ## Project scope
 
-Built in **four weeks** as a university assignment, *FLANK* was my **first game made with Unity and C#**. It uses simple shapes and colours to keep the emphasis on quick reactions and replaying for a higher score.
-
-The randomized enemy combinations were intentionally meant to create occasionally brutal situations—what I call **“the spawn rotation from hell.”** That unpredictability was part of my experiment with old-school arcade difficulty, not a claim of balanced encounters.
-
-## What this project demonstrates
-
-**Foundational C# programming · Unity 2D physics · input and projectile logic · randomized spawning · game-state management**
-
-It also serves as a starting point for comparing my later Unity work with my first attempt at building a standalone game.
-
-## Media and links
-
-- **[Play on itch.io](https://apexgenesis.itch.io/flank)**
-- **[Add your portfolio page link]** — technical overview and *The Making of FLANK* development video (**needs your input**).
-
-> **Asset attribution:** Add credits for any third-party assets used, if applicable (**needs your input**).
+Developed over **four weeks** for a university assignment. This was my first project using Unity and C#, and my goal was to make a simple, replayable arcade shooter.
