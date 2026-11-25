@@ -8,7 +8,7 @@ An endless 2D arcade shooter where enemies approach from both sides. Move left o
 
 ## My role
 
-**Solo developer - game design and programming.** I implemented player movement and shooting, enemy behaviours and spawning, scoring, and the game-over and restart system.
+**Solo developer - game design and programming.**
 
 ## Technical highlights
 
